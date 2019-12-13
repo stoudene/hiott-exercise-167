@@ -1,0 +1,99 @@
+/**AUTHOR: Esther Hiott
+ * COURSE: CPT 167
+ * PURPOSE: Module 6 Participation Exercise
+ * CREATEDATE: November 17, 2019 **/
+ 
+package edu.cpt167.hiott.program4;
+
+import java.util.Scanner;
+
+public class HiottSodNotZod 
+{
+	public static void main(String[]args)
+	{
+    //Declare and initialize a Scanner object, named input
+		Scanner input = new Scanner(System.in);
+		
+		//Declare and initialize all variables with their appropriate default values
+		public static final double DISCOUNT_RATE_MEMBER = .15;
+    public static final double DISCOUNT_RATE_SENIOR = .25;
+    public static final double DISCOUNT_RATE_NONE = 0.0;
+    public static final double TAX_RATE = 0.75public static final int MAX_PURCHASE_COUNT = 1;
+    
+    display WelcomeBanner();
+    
+    userName = getUserName(input);
+    
+    menuSelection = validateMainMenu(input);
+    
+    while (menuSelection != 'Q')
+    {
+    purchaseCounter < MAX_PURCHAASE_COUNT
+    
+    intemSelection = validateItemMenu(input)
+    howMany = validateHowMany(input)
+    
+    	//Assignment of Menu Selection
+			if(menuSelection == 'A')
+			{
+				discountRate = DISCOUNT_RATE_MEMBER;
+				memberCount++
+			}//END OF IF
+			else if(menuSelection == 'B')
+			{
+				discountRate = DISCOUNT_RATE_SENIOR;
+        seniorCount++
+			}//END OF ELSE IF
+      else
+      {
+      discountRate = DISCOUNT_RATE_NONE
+      noDiscountCounter++
+      }
+      
+      //Assignment of Item Selection
+      if(itemSelection == 'A')
+			{
+				itemName = NAME_PREMIUN
+				itemPrice = PRICE_PREMIUM
+        premiumCount++
+			}//END OF IF
+			else if(itemSelection == 'B')
+			{
+				itemName = NAME_SPECIAL
+        itemPrice = PRICE_SPECIAL
+        specialCount++
+			}//END OF ELSE IF
+      else
+      {
+      itemName = NAME_BASIC
+      itemPrice = PRICE_BASIC
+      basicCount++
+      }
+      
+      discountAMT = itemPrice * discountRate
+      discountPrice = itemPrice - discountAmt
+      subTotal = howMany * discountPrice
+      tax = subTotal * TAX_RATE
+      totalCost = subTotal + tax
+      grandTotal = grandTotal + totalCost
+      
+      displayItemReceipt(itemName, itemPrice, discountPrice, howMany, subTotal, tax, totalCost)
+      purchaseCounter++
+      
+    }
+    
+    displayCustomerReport(customerTotal)
+    purchaseCounter = RESET_VALUE
+    
+    menuSelection = validateMatinMenu(input)
+    
+    if(grandTotal > 0.0)
+    {
+    displayFinalReport(userName, memberCount, seniorCount, noDiscountCount, premiumCount, specialCount, basicCount, grandTotal)
+    }
+    
+    displayFarewellMessage()
+    
+   input(close)
+   
+}//END OF CLASS
